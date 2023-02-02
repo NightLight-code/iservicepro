@@ -1,0 +1,80 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static '/assets/css/new_style.css' %}">
+<ul class="products clearfix">
+    <li class="product-wrapper">
+        <div>
+            <a href="" class="product">
+                <div class="product-photo">
+                    <img src="{% static '/assets/images/xiaomi_logo.jpg' %}" alt="">
+                </div>
+            </a>
+        </div>
+    </li>
+    <li class="product-wrapper">
+        <div>
+            <a href="" class="product">
+                <div class="product-photo">
+                    <img src="{% static '/assets/images/Apple_logo_black.png' %}" alt="">
+                </div>
+            </a>
+        </div>
+    </li>
+    <li class="product-wrapper">
+        <div>
+            <a href="" class="product">
+                <div class="product-photo">
+                    <img src="{% static '/assets/images/Huawei-Logo.png' %}" alt="">
+                </div>
+            </a>
+        </div>
+    </li>
+    <li class="product-wrapper">
+        <div>
+            <a href="" class="product">
+                <div class="product-photo">
+                    <img src="{% static '/assets/images/Samsung.png' %}" alt="">
+                </div>
+            </a>
+        </div>
+    </li>
+</ul>
+{% endblock %}
+
+{% block about %}
+<div class="gc005-timeline">
+    <div class="gc005-container gc005-left">
+        <div class="gc005-content">
+            <h1>Почему именно мы?</h1>
+            <p>У наших мастеров большой опыт за спиной.</p>
+        </div>
+    </div>
+    <div class="gc005-container gc005-right">
+        <div class="gc005-content">
+            <h1>Бесплатная диагностика</h1>
+            <p>Сервисный центр Premium Apple Services предлагает бесплатную диагностику техники.</p>
+        </div>
+    </div>
+    <div class="gc005-container gc005-left">
+        <div class="gc005-content">
+            <h1>Оригинальные запчасти</h1>
+            <p>В нашем сервисе используются оригинальные запчасти от надежных поставщиков.</p>
+        </div>
+    </div>
+    <div class="gc005-container gc005-right">
+        <div class="gc005-content">
+            <h1>Конфиденциальность данных</h1>
+            <p>Мы строго соблюдаем закон о персональных данных и гарантируем конфиденциальность Вашей информации.</p>
+        </div>
+    </div>
+    <div class="gc005-container gc005-left">
+        <div class="gc005-content">
+            <h1>Гарантия качества</h1>
+            <p>На любой ремонт техники у нас предоставляется гарантия.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

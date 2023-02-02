@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>fayz_service</title>
+    <link rel="stylesheet" href="{% static '/assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/fonts/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/Menu-dropdown-xl.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/Navbar-Right-Links-Dark-icons.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Features-Minimal-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Portfolio-with-Category-switcher.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/Timeline---Gabriela-Carvalho.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-md bg-dark py-3" style="padding: 21px 0px;margin: 0px;height: 86px;">
+    <div class="container"><i class="far fa-star"></i><img>
+        <a class="navbar-brand d-flex align-items-center" href="#"
+           target="_blank">
+            <span
+                    style="margin: 11px;font-size: 34px;"><strong>Fayz Service</strong></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navcol-5"
+             style="filter: contrast(109%);width: 786.266px;height: 35px;margin: 20px;">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+                <li class="nav-item"><small class="form-text" style="color: rgb(251,251,251);font-size: 20px;">Продажа,
+                    покупка, восстанавление дисплеев</small></li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><input type="search" name="search_prod" placeholder="Поиск по всему сайту"
+                                            style="height: 39px;margin: 9px;width: 204px;border-radius: 8px;">
+                    <button class="btn btn-primary" type="submit" style="margin-top: -4px;padding-bottom: 6px;">Поиск
+                    </button>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+            </ul>
+            <div>
+                <div id="dropdown1" class="subnav">
+                    <div class="subnav-content"><a href="iPhone">Link</a><a href="#">Link</a><a href="#">Link</a><a
+                            href="#">Link</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-dark navbar-expand-md bg-dark py-3"
+     style="border-width: 0px;font-size: 20px;margin-top: 19px;padding-right: 70px;height: 46px;">
+    <div class="container">
+        <ul class="navbar-nav">
+            <li class="nav-item" style="margin-right: 0px;margin-left: 50px;">
+                <small class="form-text"
+                       style="font-size: 23.5px;color: rgb(253,253,254);">+79999990099</small>
+            </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Контакты</a></li>
+            <li class="nav-item"></li>
+            <li class="nav-item"></li>
+            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                                             data-bs-toggle="dropdown" href="#"><span
+                    style="color: rgb(255, 255, 255);">Каталог</span>&nbsp;</a>
+                <div class="dropdown-menu dropdown-menu-start"><a class="dropdown-item" href="#">iPhone</a><a
+                        class="dropdown-item" href="#">Samsung</a><a class="dropdown-item" href="#">Huawei</a><a
+                        class="dropdown-item" href="#">Xiaomi</a></div>
+            </li>
+            <li class="nav-item"><a class="nav-link active" href="#">Восстановление и переклейка</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">О Нас</a></li>
+        </ul>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+{% block about %}
+
+{% endblock %}
+
+<script
+        src="{% static '/assets/bootstrap/js/bootstrap.min.js' %}">
+</script>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="google-site-verification"
+          content="google-site-verification=NsYZeDY6ZcOiPEWW1M8jagg5Bl6YrYXne6bWV-NxYrE"/>
+    <title>Адреса и филиалы</title>
+    <link rel="canonical" href="https://mos-lcd.ru/address">
+    <link href="https://mos-lcd.ru/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="Адреса и филиалы">
+    <meta name="keywords" content="Адреса и филиалы">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Адреса и филиалы">
+    <meta property="og:url" content="https://mos-lcd.ru/address">
+    <meta property="og:site_name" content="mos-lcd.ru">
+    <meta property="og:description" content="Адреса и филиалы">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://mos-lcd.ru/main_image.jpg">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+body, html{margin:0px auto;height:100%;color:#fff;font-family:"Segoe UI","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:1em;line-height:100%;letter-spacing:normal;text-align:justify;background:#eee;background-size: 100% 120px;}
+h1, h2, h3 {font-weight:normal;line-height:100%;}
+h1{font-size:1.2em;    margin-top: 15px;}
+h2{font-size:1.3em;}
+h3{font-size:1.0em;} 
+
+a {cursor: pointer;}
+.link {color: blue; text-decoration: underline; }
+a:link {color: blue; text-decoration: underline; }
+a:visited {color: blue; text-decoration: underline; }
+a:hover {color: #b93434; text-decoration: underline; }
+
+.head {background-color:#000;height: 60px;}
+.head0 {width:400px;float:left;text-align:center;padding-left:20px;height:60px}
+.head1 {width:max-content;float:left;text-align:center;height:60px}
+.head2 {width:200px;float:left;text-align:center; margin-top:10px;height:60px}
+.head_logo {width:160px;float:left;text-align:center;height:60px;border-radius: 20px 20px 0 0;}
+.head_lk, .head_korzina {width:100px;float:right;text-align:center;height:60px}
+.head5 {background-color:#fff;height: 10px;float:left;width: 100%;}
+/*.head_logo img {margin-top:5px;}*/
+.head_lk img, .head_korzina img {margin-top:10px;}
+.head0 img {height:28px;margin-top:15px;float:left;}
+.head_lk a, .head_korzina a {text-decoration:none;color:#fff;}
+.content {color:#000;line-height:120%;}
+.textblock {float:left; width:40%;background:#f9f9f9;margin:1%;padding:2% 4% 2% 4%;}
+.bottom {width: 100%;background-color:#000;float:left;color: white;text-align:-webkit-left;line-height: 150%;}
+.clmn {width:33%;float:left;}
+.bottom a, .bottom .clmn a, .head2 a {color:white;}
+.bottom a:hover, .bottom .clmn a:hover {color:#b93434;}
+.bottom p, .bottom .clmn p   {margin-top:5px;margin-left:30px;}
+
+.menu {background-color:#000;}
+.telurl {text-decoration:none;color:#fff;line-height:140%;font-size:1.2em;}
+/*+ not tested */
+table {width: -webkit-fill-available;border-spacing:0;margin-bottom: 20px;}
+table td{border:1px solid rgba(0,0,0,0.06);}
+th {height:36px;font-size:12px;font-weight:600;color:#212121;/*text-indent:8px;*/padding:0;text-align:left;white-space:nowrap;overflow:hidden;    text-overflow:ellipsis;}
+th.btn_del {width:72px;}
+#addmsg a{margin-left:5px;margin-right:5px;}
+#name {}
+#email {}
+#tel {}
+#deliv {}
+#address {clear:both;}
+#comment {}
+#confirm {float:right;}
+#confirm_warning div {font-size:0.8em;padding-right:20px;width:auto;}
+#order {display:none;}
+#order_form {margin-left:30%}
+button {height:25px;text-align:center;cursor:pointer;}
+.total {height:36px;font-size:12px;font-weight:600;color:#212121;/*text-indent:8px;*/padding:0;text-align:left;white-space:nowrap;overflow:hidden;    text-overflow:ellipsis;}
+#addmsg {display:none;position:fixed;width:300px;height:130px;z-index:999;box-sizing:border-box;padding:10px;border-radius:7px;background:rgba(242, 242, 242, 0.9);box-shadow:0 0 10px rgba(0, 0, 0, 0.5);text-align:center;border:1px;border-style:solid;border-color:black;color:black;}
+#itemblock {background:#f9f9f9;margin:1%;padding:2% 4% 2% 4%;}
+#imgstatickblock {width: 50%;text-align:center;float:left;}
+#imgstatickblock img {width:400px;}
+#itemprop {width: 45%;display:inline-block;min-height:540px;padding-left: 20px;}
+#itemdescr {display: inline-block;min-height: 200px;padding-top: 20px;width: 90%;}
+#itemtitle {width: 45%;float: left;padding-left: 20px;}
+#itembtns {width: 45%;float: left;padding-left: 20px;}
+/*- not tested */
+
+
+ul {display: block;margin: 0;padding: 0;list-style: none;}
+ul:after {display: block;content: ' ';clear: both;float: none;}
+ul.menu > li {float: left;position: relative;}
+ul.menu > li > a {display: block;padding: 10px 15px 6px 15px;color: white;background-color: #000;text-decoration: none;}
+ul.menu > li > a:hover {background-color: #b93434;border-bottom: solid 5px #b93434;}
+ul.submenu {display: none;position: absolute;width: 250px;top: 37px;left: 0;background-color: white;border: 1px solid #b93434;z-index:10000;}
+ul.submenu > li {display: block;}
+ul.submenu > li > a {display: block;padding: 10px 15px 10px 15px;color: white;background-color: #b93434;text-decoration: none;}
+ul.submenu > li > a:hover {text-decoration: underline;}
+ul.menu > li:hover > ul.submenu {display: block;}
+
+ul.dots {float: left;position: relative;list-style: inside circle;}
+
+.act {border-bottom: solid 5px #b93434;}
+.noact {border-bottom: solid 5px #000;}
+.opt {float: left;padding: 10px;}
+.opt select {height:2.3em;font-size:inherit;}
+.clr {clear:both;}
+.btn {
+    font-size: 15px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    background-color: #9E9E9E;
+    background: linear-gradient(#bdbdbd,#a9a9a9);
+    border-color: #9E9E9E;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+a.btn {color:white;font-weight:normal;text-decoration:none;font-size:16px;float:right;}
+a.btn img {margin-top:2px;width:70%;}
+div.prc {font-size:17px;font-weight:normal;float:right;width:30%;height:2em;}
+div.prc span{font-size:0.8em;color:darkgrey;}
+div.cat_prc {width:min-content;margin-top:10px;font-size:1.6em;margin-left:0px;padding:0px;float: left;}
+div.cat_qnt {color:darkgrey;font-size:0.8em;width:min-content;height:50px;float:left;margin-left: 20px;}
+div.cat_qnt input{width:40px;}
+div.cat_btn {float:left;width:50px;}
+
+form.search {width: 300px;    margin-bottom: 2px;}
+form.search button {
+	border: none;
+	outline: none;
+	background: #fff;
+	margin-top: 2px;
+	height: 32px;
+	width: 32px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+form.search button:before {
+	color: #000;
+}
+form.search input {
+	border: none;
+	outline: none;
+	background: #fff;
+	margin-top: 2px;
+	width: 100%;
+	height: 32px;
+	padding-left: 15px;
+	font-size: initial;
+}
+
+#catalog div {width:15%;text-align:center;float:left;background-color:#fff;padding:1%;margin:1%;
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #eaeaea;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #eaeaea;}
+#catalog a {color:black;font-size:1em;text-decoration:none;}
+#catalog a:hover {text-decoration:underline;}
+#catalog img {/*width:90%;max-width:300px;*/    max-height: 190px;}
+#catalog div p {font-weight:normal;line-height:140%;height:40px;text-align: -webkit-left;}
+#catalog div a.btn {color:white;font-weight:normal;text-decoration:none;font-size:16px;float:right;border:0;}
+#catalog div a.btn img {margin-top:2px;width:70%;}
+#catalog div div.prc {font-size:17px;font-weight:normal;float:right;width:30%;height:2em;border:0;}
+#catalog div div.prc span{font-size:0.8em;color:darkgrey;}
+#catalog div div.cat_prc {width:min-content;margin-top:10px;font-size:1.6em;margin-left:0px;padding:0px;border:0;}
+#catalog div div.cat_qnt {color:darkgrey;font-size:0.8em;width:min-content;height:50px;float:right;border:0;}
+#catalog div div.cat_qnt input{width:40px;}
+#catalog div div.cat_btn {float:right;width:50px;border:0;}
+span.prc_other {font-size:0.6em;color:darkgray;}
+
+#login div div.btn{margin: 10px 0 10px 0;display:block;text-decoration:none;background:#b93434;padding:5px;text-align:center;color:#fff;}
+#login {display:none;color:#000;position:fixed;width:310px;z-index:998;line-height:1.5em;box-sizing:border-box;padding:10px;background:rgba(242, 242, 242, 0.95);box-shadow:0 0 10px rgba(0, 0, 0, 0.5);border:1px;border-style:solid;border-color:#fff;}
+#login div {font-size:1.1em;text-align:center;}
+#login input {font-size: 1.1em;}
+#logout div.btn{margin: 10px 0 10px 0;display:block;text-decoration:none;background:#b93434;padding:5px;text-align:center;color:#fff;}
+#logout {display:none;color:#000;position:fixed;width:280px;z-index:997;text-align:center;box-sizing:border-box;padding:10px;background:rgba(242, 242, 242, 0.95);box-shadow:0 0 10px rgba(0, 0, 0, 0.5);border:1px;border-style:solid;border-color:#fff;}
+#lkancor {cursor:pointer;}
+
+#comment_form p, #comment_form h2 {padding-left:10%;padding-right:10%;}
+#cart {padding-left:10%;padding-right:10%;margin-bottom:1.6em;}
+#orders {padding-left:10%;padding-right:10%;margin-bottom:100px;}
+#order_steps ul li {display:block;float:left;padding:10px 10px 10px 10px;}
+#order_steps ul li.next{background-image:url(css/steps-next.png);background-repeat:repeat-x;margin-left:30px;border: 1px solid #aaaaaa;}
+#order_steps ul li a {text-decoration:none;}
+#order_nav ul li {display:block;float:left;padding:10px 10px 10px 10px;}
+#order_nav ul li.next{background-image:url(css/nav-next.png);background-repeat:repeat-x;border: 1px solid #aaaaaa;}
+#order_nav ul li.prev{background-image:url(css/nav-prev.png);background-repeat:repeat-x;float:left;margin-right:30px;border: 1px solid #aaaaaa;}
+#order_nav ul li a {text-decoration:none;}
+
+#reg_form {width:300px;margin:auto;margin-bottom:14em;margin-top:7em;}
+#reg_form ul li input {width: -webkit-fill-available;}
+#reg_form ul li label {margin-top:10px;}
+[type="submit"] {padding: 5px;}
+#reg_err {color:red;font-size:0.75em;}
+
+
+@media screen and (min-width:100px) and (max-width:1474px) {   
+.head1 {width:300px;}
+#catalog div {width:20%;}
+.textblock {float:none; width:auto;}
+}
+
+@media screen and (min-width:100px) and (max-width:1300px) {   
+.head2 {width:50%;}
+#catalog div {width:20%;}
+.textblock {float:none; width:auto;}
+}
+
+@media screen and (min-width:100px) and (max-width:980px) {   
+#catalog div {width:29%;}
+#imgstatickblock img {width:100%;}
+.textblock {float:none; width:auto;}
+.clmn {width:50%;}
+.head1 {width:50%;}
+.head_lk, .head_korzina {width:50%;}
+}
+
+@media screen and (min-width:100px) and (max-width:760px){ 
+.head1 {width:100%;}
+.head2 {width:100%;margin-top: 0px;padding-bottom: 15px;display:block;}
+.head_logo {width:100%;border-radius: 50px 50px 50px 50px;}
+.head_lk, .head_korzina {width:100%;height: 55px;}
+.head {height: 215px;}
+h1 {margin-top: 5px;}
+.head_logo img, .head_lk img, .head_korzina img {margin-top: 5px;}
+.head5 {display: none;}
+.telurl {font-size:1.3em;}
+#catalog div {width:46%;}
+#catalog div div.cat_prc {font-size:1.3em;}
+/* cart */
+#comment_form p, #comment_form h2 {padding-left:5%;padding-right:5%;}
+#cart {padding-left:5%;padding-right:5%;}
+#order_form {margin-left:5%}
+#order_form div{float:left;margin-bottom:20px;width:100%;}
+table td{line-height:20px;}
+.clmn {width:100%;margin-top:30px;}
+
+#imgstatickblock {width: 100%;text-align:center;float:left;}
+#itemprop {width: 90%;display:inline-block;min-height:540px;padding-left: 20px;}
+#itemtitle {width: 90%;float: left;padding-left: 20px;}
+#itembtns {width: 90%;float: left;padding-left: 20px;}
+
+}
+
+@media screen and (min-width:100px) and (max-width:440px) { 
+.telurl {font-size:1.1em;}
+.end p   {margin-top:15px;}
+#catalog div {width:88%;padding:3%;margin:3%;}
+#comment_form p, #comment_form h2 {padding-left:0%;padding-right:0%;}
+#cart {padding-left:0%;padding-right:0%;}
+}
+    </style>
+    <script async defer type="text/javascript">
+var I_cwidth,I_cheight,S_CatId,S_ModId,S_StoreId,S_SortMode,X_com,X_crt,O_img,D_imgblock,D_imgdiv,D_cartcnt,D_catalog_title,SL_sort,SL_cats,SL_mods,SL_stores,S_htmlsvgsort,D_lkid,D_login,D_logout,D_addmsg,D_catalog;
+//var S_BrandId, SL_brnds;
+var V_user_name,V_isloggedin,V_cart_sum;
+
+function f_windowsize() {I_cwidth=document.compatMode=='CSS1Compat' && !window.opera ? document.documentElement.clientWidth : document.body.clientWidth;I_cheight=document.compatMode=='CSS1Compat' && !window.opera ? document.documentElement.clientHeight : document.body.clientHeight;}
+function f_delspaces(str) {return str.replace(/\s/g, '');}
+function f_imgblock(href) {if(href=='') {D_imgblock.style.display='none';}	else {O_img.src = href;}}
+
+function f_parse_response(response) {
+	//console.log("f_parse_response");
+	//console.log(response);
+	result = JSON.parse(response);
+	if(result.user != null) {
+		if(result.user.user_name != V_user_name) {
+			V_user_name = result.user.user_name;
+			V_isloggedin = true;
+			f_set_user_name(result.user.user_name);
+		}	
+	} else {
+		V_isloggedin = false;
+	}
+	if(result.totals != null) {
+		if(result.totals.cart_sum != V_cart_sum) {
+			V_cart_sum = result.totals.cart_sum;
+			f_set_totals(result.totals.cart_sum);
+		}	
+	}
+}
+
+function f_X_crt_recive_response(response) {
+	//console.log("f_X_crt_recive_response");
+	//console.log(response);
+	result = JSON.parse(response);
+	if(result.cart_sum==0 || result.cart_sum==null) {
+		D_cartcnt.innerHTML = '<span>Корзина</span>';
+	} else {
+		D_cartcnt.innerHTML = '<span>'+result.cart_sum+' ₽ </span>';
+	}
+	if(result.name=='' || result.name==null) {
+		D_lkid.innerHTML = 'Войти';
+		document.getElementById("lkancor").onclick = function() {f_show_login_form();};
+	}
+	else {
+	    D_lkid.innerHTML = result.name;
+		document.getElementById("lkancor").onclick = function() {f_show_logout_form();};
+	}
+}
+
+function f_get_info() {
+	X_com.open("POST", "v3_common.php", true);
+	X_com.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	X_com.withCredentials = true;
+	X_com.onreadystatechange = function() {if (X_com.readyState === 4 && X_com.status === 200) {f_parse_response(X_com.response);}}
+	X_com.send('a=p');
+	//console.log(cmd);
+};
+
+function f_show_login_form(){var c = D_lkid.getBoundingClientRect();D_login.style.left=(I_cwidth-330)+'px';D_login.style.top=(c.top+30)+'px';D_login.style.display='block';};
+function f_show_logout_form(){var c = D_lkid.getBoundingClientRect();D_logout.style.left=(I_cwidth-330)+'px';D_logout.style.top=(c.top+30)+'px';D_logout.style.display='block';};
+function f_set_user_name(username) {if(username==null) {D_lkid.innerHTML = 'Войти';document.getElementById("lkancor").onclick = function() {f_show_login_form();};D_login.style.display='none';D_logout.style.display='none';} else {D_lkid.innerHTML = username;document.getElementById("lkancor").onclick = function() {f_show_logout_form();}};D_login.style.display='none';D_logout.style.display='none';}
+function f_set_totals(cart_sum) {if(cart_sum==0 || cart_sum==null) {D_cartcnt.innerHTML = '<span>Корзина</span>';} else {D_cartcnt.innerHTML = '<span>'+cart_sum+' ₽ </span>';}};
+
+function f_show_addmsg(){D_addmsg.style.left=(I_cwidth-320)/2+'px';D_addmsg.style.top=(I_cheight-130)/2+'px';D_addmsg.style.display='block';};
+
+function f_login() {
+	ll = document.getElementById("input_login").value;
+	lp = document.getElementById("input_pwd").value;
+	lip = document.getElementById("input_not_attach_ip").value;
+	if (!ll == '' && !lp == '') {
+		X_com.open("POST", "v3_common.php", true);
+		X_com.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		X_com.withCredentials = true;
+		X_com.onreadystatechange = function() {if (X_com.readyState === 4 && X_com.status === 200) {f_parse_response(X_com.response);}}
+		X_com.send('a=in&login='+ll+'&password='+lp+'&not_attach_ip='+lip);
+		//console.log('a=in&login='+ll+'&password='+lp+'&not_attach_ip='+lip);
+	} else {
+		document.getElementById("input_error").innerHTML = 'Пустой логин или пароль';
+	}
+}
+
+function f_show_logout(){var c = D_lkid.getBoundingClientRect();D_logout.style.left=(I_cwidth-330)+'px';D_logout.style.top=(c.top+30)+'px';D_logout.style.display='block';};
+function f_logout() {
+	X_com.open("POST", "v3_common.php", true);
+	X_com.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	X_com.withCredentials = true;
+	X_com.onreadystatechange = function() {if (X_com.readyState === 4 && X_com.status === 200) {f_parse_response(X_com.response);}}
+	X_com.send('a=out');
+}
+
+document.onreadystatechange = function(){
+	if(document.readyState === 'complete'){
+		D_catalog = document.getElementById("catalog");
+		//D_imgblock = document.getElementById("imgblock");
+		//D_imgdiv = document.getElementById("imgdiv");
+		D_cartcnt = document.getElementById("cartcnt");
+		//D_catalog_title = document.getElementById('catalog_title');
+		SL_cats = document.getElementById("category");
+		SL_mods = document.getElementById("model");
+		//SL_brnds = document.getElementById("brand");
+		SL_stores = document.getElementById("store");
+		SL_sort = document.getElementById("sort");
+		D_addmsg = document.getElementById("addmsg");
+		D_login = document.getElementById("login");
+		D_logout = document.getElementById("logout");
+		D_lkid = document.getElementById("lkid");
+		if (window.XMLHttpRequest) {X_com = new XMLHttpRequest(); X_crt = new XMLHttpRequest();} else {X_com = new ActiveXObject("Microsoft.XMLHTTP"); X_crt = new ActiveXObject("Microsoft.XMLHTTP");}
+		f_get_info();
+		window.onresize = function() {f_windowsize();};
+		f_windowsize();
+		/**/
+/*		O_img = new Image();
+		O_img.onload = function() {
+			D_imgdiv.style.backgroundImage = this;
+ 
+			let dw = 0,dh = 0;
+			if(I_cwidth>I_cheight) {
+				if(I_cwidth-60<this.naturalWidth) {
+					dw=this.naturalWidth*(I_cheight-60)/this.naturalHeight;dh=I_cheight-60;
+				} else {
+					dw=this.naturalWidth;dh=this.naturalHeight;
+				}
+			}
+			else {
+				if(I_cwidth-60<this.naturalWidth) {
+					dw=I_cwidth-60;dh=this.naturalHeight*(I_cwidth-60)/this.naturalWidth;
+				} else {
+					dw=this.naturalWidth;dh=this.naturalHeight;
+				}
+			}
+			D_imgblock.style.width=dw+'px';D_imgblock.style.height=dh+'px';
+			D_imgblock.style.left=(I_cwidth-dw-20)/2+'px';D_imgblock.style.top=(I_cheight-dh-20)/2+'px';D_imgblock.style.display='block';
+			D_imgdiv.style.backgroundImage ='url(\u0027'+O_img.src+'\u0027)';
+			D_imgblock.style.display='block';
+			D_imgblock.onclick = function() {D_imgblock.style.display='none';};
+		}*/
+		/**/
+	}
+};
+
+
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(69435745, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/69435745" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript> <!-- /Yandex.Metrika counter -->
+    <base href="https://mos-lcd.ru/">
+</head>
+<body>
+<div class="head">
+    <div class="head_logo"><a href="https://mos-lcd.ru/"><img alt="Дисплеи для iPhone"
+                                                              src="https://mos-lcd.ru/css/logosmail.jpg"></a></div>
+    <div class="head0"><img alt="Магазин" src="https://mos-lcd.ru/css/mappointer.svg">
+        <div id="stores">
+            <form action="" method="post">
+                <div class="opt"><select name="store" id="store" onchange="f_selstore()">
+                    <option value="0">Воронеж</option>
+                    <option value="1">Казань, ТЦ «Алтын»</option>
+                    <option value="2">Краснодар, ТК «Центр Города»</option>
+                    <option value="3">Москва, ТЦ «Митинский радиорынок»</option>
+                    <option value="4">Москва, ТЦ «Савеловский рынок»</option>
+                    <option value="5">Москва, ТЦ «Горбушкин двор»</option>
+                    <option value="6">Москва, Центральный офис</option>
+                    <option value="7">Новороссийск</option>
+                    <option value="8">Одинцово, «Одинцовский пассаж»</option>
+                    <option value="9">Ростов-на-Дону, Ростов на Дону</option>
+                    <option value="10">Ростов-на-Дону</option>
+                    <option value="11">Севастополь, ТЦ «Новый Бульвар»</option>
+                    <option value="12">Симферополь</option>
+                    <option value="13">Сочи</option>
+                    <option value="14">Ставрополь, ТЦ «Академический»</option>
+                </select></div>
+            </form>
+        </div>
+    </div>
+    <div class="head1"><h1>Адреса и филиалы</h1></div>
+    <div class="head2"><a href="tel:88005558413" class="telurl">+7 926 730 25 43</a></div>
+    <div class="head_lk">
+        <div onclick="f_show_login_form();" id="lkancor"><img alt="Корзина" src="https://mos-lcd.ru/css/lk.png">
+            <div id="lkid"><span>Войти</span></div>
+        </div>
+    </div>
+    <div class="head_korzina"><a href="cart.php"><img alt="Корзина" src="https://mos-lcd.ru/css/korzina.png">
+        <div id="cartcnt"><span>Товаров: 0</span></div>
+    </a></div>
+    <div class="head5"></div>
+</div>
+<div class="block2"></div>
+
+<ul class="menu">
+    <li><a href="https://mos-lcd.ru/index.php" class="act" id="catalog_menu">Каталог</a></li>
+    <li><a href="https://mos-lcd.ru/address/" class="noact" target="_self" id="address_menu">Адреса и Филиалы</a></li>
+    <li><a href="https://mos-lcd.ru/perekleika/" class="noact" target="_self" id="perekleika_menu">Восстановление и
+        переклейка дисплеев iPhone</a></li>
+    <li><a href="https://mos-lcd.ru/bga_paika/" class="noact" target="_self" id="bga_paika_menu">BGA пайка</a></li>
+    <li><a id="searchresults_menu" style="display:none;" class="act">Результат поиска по всему каталогу</a></li>
+    <li>
+        <form method="GET" action="https://mos-lcd.ru/search.php" class="search">
+            <input id="searchword" name="searchword" placeholder="Поиск по всему каталогу..." type="search">
+            <button type="submit">
+                <svg class="Filemanager__searchIcon___ZJIhE" id="SvgjsSvg1022" version="1.1" width="17" height="16"
+                     viewBox="0 0 17 16">
+                    <defs id="SvgjsDefs1023"></defs>
+                    <path id="SvgjsPath1024"
+                          d="M1237.5 176C1239.98 176 1242 178.02 1242 180.5C1242 182.98 1239.98 185 1237.5 185C1235.02 185 1233 182.98 1233 180.5C1233 178.02 1235.02 176 1237.5 176ZM1242.74 184.33C1243.53 183.26000000000002 1244 181.93 1244 180.5C1244 176.91 1241.09 174 1237.5 174C1233.91 174 1231 176.91 1231 180.5C1231 184.09 1233.91 187 1237.5 187C1238.93 187 1240.26 186.53 1241.33 185.74L1245.29 189.71C1245.49 189.9 1245.74 190 1246 190C1246.26 190 1246.51 189.9 1246.71 189.71C1247.1000000000001 189.32000000000002 1247.1000000000001 188.68 1246.71 188.29000000000002Z "
+                          fill="#969aa6" fill-opacity="1" transform="matrix(1,0,0,1,-1231,-174)"></path>
+                </svg>
+            </button>
+        </form>
+    </li>
+</ul>
+<div class="content">
+    <div class="clr"></div>
+
+
+    <div class="textblock" style="float:none;">
+        <a href="https://mos-lcd.ru/address#details">Реквизиты&nbsp;организации</a>&nbsp;и&nbsp;адреса&nbsp;филиалов:&nbsp;
+        <a href="https://mos-lcd.ru/address#voronej">Воронеж</a>&nbsp&nbsp <a href="https://mos-lcd.ru/address#kazan">Казань</a>&nbsp&nbsp
+        <a href="https://mos-lcd.ru/address#krasnodar">Краснодар</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#moskva">Москва</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#novorossiysk">Новороссийск</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#odincovo">Одинцово</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#rostov-na-donu">Ростов-на-Дону</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#sevastopol">Севастополь</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#simferopol">Симферополь</a>&nbsp&nbsp <a
+            href="https://mos-lcd.ru/address#sochi">Сочи</a>&nbsp&nbsp <a href="https://mos-lcd.ru/address#stavropol">Ставрополь</a>&nbsp&nbsp
+    </div>
+    <div class="textblock" style="float:none;"><a name="voronej"><h2>Воронеж</h2></a>г. Воронеж, ул. Средне-Московская
+        31, тел:&nbsp;+7&nbsp;(910)&nbsp;744-53-33</p></div>
+    <div class="textblock" style="float:none;"><a name="kazan"><h2>Казань</h2></a>
+        <p>ТЦ «Алтын»<br>г. Казань, ул. Марселя Салимжанова, д. 5, этаж 2, тел:&nbsp;+7&nbsp;(965)&nbsp;620-65-21</p>
+    </div>
+    <div class="textblock" style="float:none;"><a name="krasnodar"><h2>Краснодар</h2></a>
+        <p>ТК «Центр Города»<br>г. Краснодар, ул. Леваневского 187, тел:&nbsp;+7&nbsp;(961)&nbsp;515-89-69</p></div>
+    <div class="textblock" style="float:none;"><a name="moskva"><h2>Москва</h2></a>
+        <p>ТЦ «Митинский радиорынок»<br>г.Москва, Пятницкое шоссе 18, этаж 2, пав. 531 (м.Волоколамская), тел:&nbsp;+7&nbsp;(903)&nbsp;723-76-67
+        </p>
+        <p>ТЦ «Савеловский рынок»<br>г.Москва, Сущевский вал, д. 5, стр. 6, пав т-96, тел:&nbsp;+7&nbsp;(965)&nbsp;444-33-55
+        </p>
+        <p>ТЦ «Горбушкин двор»<br>г.Москва, ул. Барклая 8,ТЦ &quot;Горбушкин двор&quot;, этаж 2, пав. С2-008А, тел:&nbsp;+7&nbsp;(926)&nbsp;730-25-43
+        </p>
+        <p>Центральный офис<br>г.Москва, ул. Багратионовский проезд д. 7/20A, тел:&nbsp;+79163334487</p></div>
+    <div class="textblock" style="float:none;"><a name="novorossiysk"><h2>Новороссийск</h2></a>г. Новороссийск, ул.
+        Коммунистическая, д.4 / Советов, д.13А, тел:&nbsp;+7&nbsp;(928)&nbsp;440-24-82</p></div>
+    <div class="textblock" style="float:none;"><a name="odincovo"><h2>Одинцово</h2></a>
+        <p>«Одинцовский пассаж»<br>г. Одинцово, Привокзальная площадь д. 1а, пав. 71/73, тел:&nbsp;+7&nbsp;(965)&nbsp;225-77-66
+        </p></div>
+    <div class="textblock" style="float:none;"><a name="rostov-na-donu"><h2>Ростов-на-Дону</h2></a>
+        <p>Ростов на Дону<br>г. Ростов-на-Дону, ул. Серафимовича 53а, 2 этаж, офис 7а, тел:&nbsp;+7&nbsp;(928)&nbsp;108-72-57
+        </p>г. Ростов-на-Дону, ул. Серафимовича 53а, 2 этаж, офис 7а, тел:&nbsp;+7&nbsp;(928)&nbsp;108-72-57</p></div>
+    <div class="textblock" style="float:none;"><a name="sevastopol"><h2>Севастополь</h2></a>
+        <p>ТЦ «Новый Бульвар»<br>по. Крым, г. Севастополь, Площадь Восставших, д. 4, корп. 6, тел:&nbsp;+7&nbsp;(978)&nbsp;827-27-75
+        </p></div>
+    <div class="textblock" style="float:none;"><a name="simferopol"><h2>Симферополь</h2></a>по. Крым, г. Симферополь,
+        Пионерский переулок, 1, тел:&nbsp;+7&nbsp;(978)&nbsp;827-27-56</p></div>
+    <div class="textblock" style="float:none;"><a name="sochi"><h2>Сочи</h2></a>Краснодарский край, город-курорт Сочи,
+        Центральный район, ул. Воровского 34/3, тел:&nbsp;+7&nbsp;(918)&nbsp;605-79-55</p></div>
+    <div class="textblock" style="float:none;"><a name="stavropol"><h2>Ставрополь</h2></a>
+        <p>ТЦ «Академический»<br>ул. Мира 300Б, 2 этаж, тел:&nbsp;+7(961)&nbsp;490-88-83</p></div>
+    <div class="textblock" style="float:none;"><a name="details"><h2>Реквизиты организации</h2></a>
+        <p>Общество с ограниченной ответственностью "МОС-ЛСД"<br>
+            ИНН: 5047217897<br>
+            КПП: 504701001<br>
+            ОГРН: 1185053040281<br>
+            ОКПО: 34521160<br>
+            Расчетный счет: 40702810702140002533<br>
+            Банк: АО "АЛЬФА-БАНК"<br>
+            БИК: 044525593<br>
+            Корр.счет: 30101810200000000593<br>
+            Юридический адрес: 141401, Московская&nbsp;обл., Городской&nbsp;округ&nbsp;Химки, Академика&nbsp;Грушина&nbsp;ул,
+            дом&nbsp;№8,&nbsp;квартира&nbsp;4<br>
+            Генеральный директор: Журихин&nbsp;Андрей&nbsp;Эдуардович</p>
+    </div>
+</div>
+
+<div class="bottom">
+    <div class="clmn">
+        <p><a href="https://mos-lcd.ru/address">Наши адреса и филиалы</a></p>
+        <p><a href="https://mos-lcd.ru/warranty/">Гарантийные условия</a></p>
+        <p><a href="tel:+79267302543" class="telurl">+7 926 730 25 43</a></p>
+        <p>© Mos-Lcd 2018-2020</p>
+    </div>
+    <div class="clmn">
+        <p>ООО&nbsp"МОС-ЛСД"</p>
+        <p>ИНН:&nbsp5047217897, КПП:&nbsp504701001</p>
+        <p>ОГРН:&nbsp1185053040281, ОКПО:&nbsp34521160</p>
+        <p></p>
+    </div>
+    <div class="clmn">
+        <p>Наши партнеры:</p>
+        <p><a href="https://phonedoctor.pro/" target="_blank">Phonedoctor.pro - ремонт iPhone за&nbsp20&nbspминут с
+            выездом</a></p>
+    </div>
+</div>
+<div id="addmsg"><h3>Добавлено в корзину</h3><br>
+    <div class="btn" onclick="D_addmsg.style.display='none';">Продолжить</div>
+    <div class="btn" onclick="location.href='https://mos-lcd.ru/cart'">В корзину</div>
+</div>
+
+<div id="login">
+    <div>Вход</div>
+    <div>
+        <form method="POST">
+            <div>Логин</div>
+            <div><input name="login" type="text" id="input_login"></div>
+            <div>Пароль</div>
+            <div><input name="password" type="password" id="input_pwd"></div>
+            <div>Не прикреплять к IP <input type="checkbox" name="not_attach_ip" id="input_not_attach_ip"></div>
+        </form>
+        <div class="btn" onclick="f_login();return false">Войти</div>
+        <div class="btn" onclick="location.href='https://mos-lcd.ru/register'">Регистрация</div>
+        <div class="btn" onclick="D_login.style.display='none';" style="background-color:#aeaeae;">Отмена</div>
+        <span id="input_error"></span>
+    </div>
+</div>
+<div id="logout">
+    <div class="btn" onclick="location.href='https://mos-lcd.ru/lk'">Личный кабинет</div>
+    <div class="btn" onclick="f_logout();">Выйти</div>
+    <div class="btn" onclick="D_logout.style.display='none';" style="background-color:#aeaeae;">Отмена</div>
+</div>
+</body>
+</html>

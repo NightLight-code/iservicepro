@@ -1,0 +1,64 @@
+
+
+
+
+<ul class="list-articles">
+    <h1>{{title}}</h1>
+    {% for p in phone %}
+    <li>
+        <h2>{{p.model_phone}}</h2>
+        <p>{{p.memory_phone}}</p>
+        <p>{{p.colors_phone}}</p>
+        <p>{{p.region_phone}}</p>
+        <p>{{p.price_phone}}</p>
+        <div class="clear"></div>
+    </li>
+    {% endfor %}
+</ul>
+<table class="table-page" border=0 cellpadding="0" cellspacing="0">
+    <tr>
+        <td valign=top>
+            {% block mainmenu %}
+            <div class="header">
+                <ul id="mainmenu" class="mainmenu">
+                    <li class="logo"><a href="#">
+                        <div class="logo"></div>
+                    </a></li>
+                    {% for m in menu %}
+                    {% if not forloop.last %}
+                    <li><a href="#">{{m.title}}</a></li>
+                    {% else %}
+                    <li class="last"><a href="#">{{m.title}}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                <div class="clear"></div>
+            </div>
+            {% endblock mainmenu %}
+
+            <table class="table-content" border=0 cellpadding="0" cellspacing="0">
+                <tr><td valign="top" class="left-chapters">
+    <ul id="leftchapters">
+        <li class="selected">Все категории</li>
+        <li><a href="#">iPhone</a></li>
+        <li><a href="#">iPad</a></li>
+        <li><a href="#">Macboock</a></li>
+        <li class="share">
+            <p>Наш канал</p>
+        </li>
+    </ul>
+</td>
+
+                <!-- Конец Sidebar'а -->
+<td valign="top" class="content">
+    <!-- Хлебные крошки -->
+    {% block breadcrumbs %}
+    {% endblock %}
+
+    <!-- Блок контента -->
+    <div class="content-text">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- Конец блока контента -->
+    <!-- Конец footer'а и страницы -->
